@@ -1,0 +1,44 @@
+img{
+    height: 100%;
+    width: 100%;
+}
+.row{
+    height: 400px;
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+.row > div{
+    flex: 1;
+}
+.vertical-collage img{
+    height:50%
+}
+.square-collage{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 5px;
+}
+/*respomsive media query*/
+@media screen and(max-width:576px) {
+    .row{
+        flex-direction: column;
+    }
+    .square-collage{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.totini{
+    height: 100%;
+
+}
+.ayman{
+    height: 100%;
+
+}
+.massy{
+    margin-top: 5px;
+    
+}

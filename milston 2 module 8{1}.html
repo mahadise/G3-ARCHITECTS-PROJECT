@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 20px;
+        }
+        .box{
+            background-color:yellow;
+            padding: 10px;
+            border: 15px solid purple;
+            border-radius: 5px;
+        }
+        .container2{
+            display: flex;
+           flex-wrap: wrap;
+           gap: 10px;
+           
+            /*display: grid;*/
+            /*grid-template-columns: repeat(5, 2fr);*/
+        }
+        .item{
+            width: 200px;
+            height: 100px;
+            border: 5px solid tomato;
+            border-radius: 5px;
+        }
+        @media screen and(max-width:576px) {
+            .container{
+                flex-direction: column;
+            }
+        }
+          
+    </style>
+</head>
+<body>
+    <h1>more responsive layout</h1>
+    <div class="container">
+        <div class="box">
+            <h2>first box</h2>
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     Similique sed illum dicta consectetur
+      dolores cupiditate asperiores maxime ut id corrupti!</p>
+        </div>
+        <div class="box">
+            <h2>second box</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Similique sed illum dicta consectetur
+                 dolores cupiditate asperiores maxime ut id corrupti!</p>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="item">item - 1</div>
+        <div class="item">item - 2</div>
+        <div class="item">item - 3</div>
+        <div class="item">item - 4</div>
+        <div class="item">item - 5</div>
+        <div class="item">item - 6</div>
+        <div class="item">item - 7</div>
+        <div class="item">item - 8</div>
+        <div class="item">item - 9</div>
+        <div class="item">item - 10</div>
+    </div>
+</body>
+</html>
+
+
+<P>MODULE 8-2</P>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/collage.css">
+</head>
+<body>
+    <header>
+        <h1>my photo collage</h1>
+    </header>
+    <main>
+        <section>
+            <div class="row">
+                <img src="images/hrithik roshan.jpg" alt="">
+            </div>
+            <div class="row">
+                <div>
+                    <img src="images/shahrukh.khan.jpg" alt="">
+                </div>
+     <div>
+        <img src="images/najnin nahar.jpg" alt="">
+     </div>
+     <div class="vertical-collage">
+        <img src="images/shakib khan.webp" alt="">
+        <img src="images/catherine langford.jpg" alt="">
+     </div>
+            </div>
+            <div class="row">
+                <div>
+                    <img src="images/ananta.jpg" alt="">
+                </div>
+                <div class="square-collage">
+                    <img src="images/samantha.webp" alt="">
+                    <img src="images/zarin khan.webp" alt="">
+                    <div class="totini">
+                        <img src="images/totini.jpg" alt="">
+                    </div>
+                    <div class="ayman">
+                        <img src="images/sadia ayman.png" alt="">
+                    </div>
+                </div>
+                ,<div class="massy">
+                    <img src="images/Vikrant-Massey.jpg" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
