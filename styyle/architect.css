@@ -5,6 +5,17 @@
 *{
     font-family: 'Work Sans', sans-serif;
 }
+ .banner-content > .btn-primary{
+    background: #FF900E;
+    color: #FFF;
+    font-size: 1.25rem;
+    border-radius: 8px;
+    margin: 20px 25px;
+    color: #FFF;
+    cursor: pointer;
+    border: 0;
+ }
+
 /*header styles*/
 header{
     background: rgba(255, 144, 14, 0.10);
@@ -46,4 +57,29 @@ color: #424242;
 }
 .banner-description{
     color: #727272;
+}
+.banner img{
+    width: 100%;
+}
+
+
+/*responsive media query aply on header*/
+/*mobile devices*/
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+
+/*medium devices*/
+@media screen and (min-width:576px) and (max-width:960px) {
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
 }
